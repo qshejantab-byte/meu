@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grotta Resort — Menu</title>
+<meta name="description" content="The Grotta Resort menu — dining and drinks, in the volcanic highlands of Musanze, Rwanda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav" id="siteNav">
+  <span class="nav-logo">GROTTA RESORT</span>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#menu">Menu</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <img class="hero-photo" src="assets/hero-cave.jpg" alt="" aria-hidden="true">
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-content" data-reveal>
+      <p class="eyebrow">Grotta Resort · Musanze — Festive Season</p>
+      <h1 class="hero-title">Menu</h1>
+      <p class="hero-sub">Dining and drinks, by candlelight.</p>
+      <a href="#menu" class="btn btn-primary">View the Menu <span aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <!-- MENU SELECTION -->
+  <section class="menu-select-section" id="menu">
+    <div class="menu-books">
+      <div class="seam seam-v" aria-hidden="true"></div>
+      <button type="button" class="menu-book book-dining" data-menu-open="dining">
+        <img class="book-photo" src="assets/dining-texture.jpg" alt="" aria-hidden="true">
+        <div class="book-scrim" aria-hidden="true"></div>
+        <div class="book-body">
+          <span class="book-index">01</span>
+          <h2 class="book-name">Dining</h2>
+          <p class="book-tag">Signature dishes, regional comfort, family platters</p>
+          <span class="book-cta">View Dining Menu <span aria-hidden="true">→</span></span>
+        </div>
+      </button>
+
+      <button type="button" class="menu-book book-drinks" data-menu-open="drinks">
+        <img class="book-photo" src="assets/drinks-texture.jpg" alt="" aria-hidden="true">
+        <div class="book-scrim" aria-hidden="true"></div>
+        <div class="book-body">
+          <span class="book-index">02</span>
+          <h2 class="book-name">Drinks</h2>
+          <p class="book-tag">Cocktails, wine cellar, bottle service &amp; spirits</p>
+          <span class="book-cta">View Drinks Menu <span aria-hidden="true">→</span></span>
+        </div>
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="footer-word">GROTTA RESORT</p>
+  <p class="footer-place">Musanze, Rwanda</p>
+  <p class="footer-note">Please advise us of any dietary requirements or food allergies.</p>
+</footer>
+
+<!-- MENU SHEET OVERLAY -->
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <div class="menu-overlay-bg" data-menu-close></div>
+  <div class="menu-sheet" role="dialog" aria-modal="true" aria-labelledby="menuSheetTitle" tabindex="-1">
+    <div class="menu-sheet-head">
+      <div>
+        <p class="menu-sheet-eyebrow" id="menuSheetEyebrow"></p>
+        <h2 class="menu-sheet-title" id="menuSheetTitle"></h2>
+      </div>
+      <button type="button" class="menu-close" data-menu-close aria-label="Close menu">Close <span aria-hidden="true">×</span></button>
+    </div>
+
+    <nav class="menu-pills" id="menuPills" aria-label="Menu chapters"></nav>
+
+    <div class="menu-sheet-body" id="menuSheetBody">
+      <div id="menuSheetChapters"></div>
+      <p class="menu-sheet-footnote">Please advise us of any dietary requirements or food allergies.</p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
